@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../Naviation';
+import Nav from 'react-bootstrap/Nav';
 
 function Header(props) {
     const {
@@ -15,14 +16,14 @@ function Header(props) {
                     <div>
                         <h1>Maggie Joseph</h1>
                     </div>
-                    <nav>
+                    <Nav>
                         <Navigation
                             categories={categories}
                             currentCategory={currentCategory}
                             setCurrentCategory={setCurrentCategory}
                         >
                         </Navigation>
-                    </nav>
+                    </Nav>
                 </div>
             </header>
         </div>

@@ -6,6 +6,9 @@ import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Page from './components/Page'
 
 function App() {
   const [categories] = useState([
@@ -24,7 +27,32 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  // const [contactSelected, setContactSelected] = useState(false);
+  // console.log(currentCategory);
+  
+  const renderPage = () => {
+    if (currentCategory === 'About Me') {
+        return (
+            <About></About>
+        )
+    } else if (currentCategory === 'Portfolio') {
+        console.log(currentCategory);
+        return (
+            <Portfolio></Portfolio>
+        )
+    } else if (currentCategory === 'Contact Me') {
+        return (
+            <ContactForm></ContactForm>
+        )
+    } else if (currentCategory === 'Resume') {
+        return (
+            <Resume></Resume>
+        )
+    } else {
+        return (
+            <About></About>
+        )
+    }
+}
 
   return (
     <div>
@@ -34,35 +62,12 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Header>
       <main>
-        <About></About>
-        {(() => {
-          if (currentCategory === "About Me") {
-            return (
-              <div>
-                <About></About>
-              </div>
-            );
-          } else if (currentCategory === "Portfolio") {
-            return (
-              <div>
-                <Portfolio></Portfolio>
-              </div>
-            )
-          } else if (currentCategory === "Contact Me") {
-            return (
-              <div>
-                <ContactForm></ContactForm>
-              </div>
-            )
-          } else if (currentCategory === "Resume") {
-            return (
-              <div>
-                <Resume></Resume>
-              </div>
-            )
-          }
-        })}
+        {/* <Page currentCategory={currentCategory}></Page> */}
+        { renderPage() }
       </main>
+
+      <Footer></Footer>
+
     </div>
   );
 }

@@ -38,9 +38,9 @@ function ContactForm() {
   
     return (
       <section>
-        <h1 data-testid="h1tag">Contact me</h1>
+        <h1>Contact me</h1>
 
-        {/* contact info */}
+        {/* contact info, need to add hrefs to each */}
         <div>
             <p>Email</p>
             <p>GitHub</p>
@@ -65,7 +65,7 @@ function ContactForm() {
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button data-testid="button" type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </section>
     );
