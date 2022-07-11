@@ -3,18 +3,19 @@ import selfPortrait from '../../assets/images/self-portrait.png';
 
 function About() {
     return (
-        <section>
-            <h1 id='about'>About Me!</h1>
-            <img src={selfPortrait} className='self-portrait' style={{ width: "25%" }} alt='Self portrait' />
-            <div className='about-me-desc'>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-                    condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-                    mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-                    Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-                    justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-                    dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-                    Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+        <section className='py-5 text-center'>
+            <h1 className='mb-4'>Hey, I'm Maggie!</h1>
+            <img src={selfPortrait} className='mb-4 border border-dark border-3' style={{ width: "25%" }} alt='Self portrait' />
+            <div>
+                <p id='about' className='pb-5'>
+                    Hi! Thank you for visiting my portfolio! I'm a full stack web developer that recently completed the Full Stack Coding Program with the University of Toronto.
+                    Over the past six months I've gotten a crash course on all things coding. I've gained skills with front-end knowledge with HTML, CSS, React in addition to
+                    back-end knowledge with JavaScript, MySQL, MongoDB, node.js and much more!
+                    <br />
+                    <br />
+                    I'm looking forward to taking all the knowledge I've learned and apply it to exciting web designs with a passionate team of developers!
+                    With my several years of experience in customer service and management I think I have all the qualities to fit your team!
+                    Please visit the contact me sections so we can get in touch! I look forward to meeting you!
                 </p>
             </div>
         </section>

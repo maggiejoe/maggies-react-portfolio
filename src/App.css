@@ -47,4 +47,17 @@ li a {
 
 #footer {
   background-color: var(--lincoln-green);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
+/* ABOUT ME */
+
+/* #about {
+  margin-bottom: 0rem;
+} */
+
+/* .self-portrait {
+  
+} */
