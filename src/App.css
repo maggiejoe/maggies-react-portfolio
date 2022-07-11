@@ -85,3 +85,7 @@ li a {
 #resume:hover, #links:hover {
   color: var(--blue);
 }
+
+#resume-title {
+  color: var(--lincoln-green);
+}
