@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import About from './components/About';
 import ContactForm from './components/Contact';
-// import Navigation from './components/Naviation';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Page from './components/Page'
 
 function App() {
   const [categories] = useState([
@@ -27,7 +25,7 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  // console.log(currentCategory);
+
   
   const renderPage = () => {
     if (currentCategory === 'About Me') {
@@ -35,7 +33,6 @@ function App() {
             <About></About>
         )
     } else if (currentCategory === 'Portfolio') {
-        console.log(currentCategory);
         return (
             <Portfolio></Portfolio>
         )
@@ -62,7 +59,6 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Header>
       <main>
-        {/* <Page currentCategory={currentCategory}></Page> */}
         { renderPage() }
       </main>
 
