@@ -1,6 +1,9 @@
 import React from 'react';
 import Navigation from '../Naviation';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+
 
 function Header(props) {
     const {
@@ -10,13 +13,12 @@ function Header(props) {
     } = props
 
     return (
-        <div>
-            <header>
-                <div>
+        <Navbar sticky='top'>
+                <Container>
                     <div>
-                        <h1>Maggie Joseph</h1>
+                        <Navbar.Brand className='m-2 fw-bolder fs-1'>Maggie Joseph</Navbar.Brand>
                     </div>
-                    <Nav>
+                    <Nav className='nav-item'>
                         <Navigation
                             categories={categories}
                             currentCategory={currentCategory}
@@ -24,9 +26,8 @@ function Header(props) {
                         >
                         </Navigation>
                     </Nav>
-                </div>
-            </header>
-        </div>
+                </Container>
+        </Navbar>
     )
 }
 
