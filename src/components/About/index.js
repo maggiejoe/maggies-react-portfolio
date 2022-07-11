@@ -4,10 +4,10 @@ import selfPortrait from '../../assets/images/self-portrait.png';
 function About() {
     return (
         <section className='py-5 text-center'>
-            <h1 className='mb-4'>Hey, I'm Maggie!</h1>
-            <img src={selfPortrait} className='mb-4 border border-dark border-3' style={{ width: "25%" }} alt='Self portrait' />
+            <h1 id='text-color' className='mb-4'>Hey, I'm Maggie!</h1>
+            <img src={selfPortrait} id='img-border' className='mb-4' style={{ width: "25%" }} alt='Self portrait' />
             <div>
-                <p id='about' className='pb-5'>
+                <p id='text-color' className='pb-5'>
                     Hi! Thank you for visiting my portfolio! I'm a full stack web developer that recently completed the Full Stack Coding Program with the University of Toronto.
                     Over the past six months I've gotten a crash course on all things coding. I've gained skills with front-end knowledge with HTML, CSS, React in addition to
                     back-end knowledge with JavaScript, MySQL, MongoDB, node.js and much more!

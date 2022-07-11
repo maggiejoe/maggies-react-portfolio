@@ -17,6 +17,9 @@ li {
 
 main {
   background-color: var(--light-green);
+}
+
+#text-color {
   color: var(--forest-green);
 }
 
@@ -52,12 +55,22 @@ li a {
   width: 100%;
 }
 
-/* ABOUT ME */
+/* ABOUT */
 
-/* #about {
-  margin-bottom: 0rem;
-} */
+#about {
+  color: var(--forest-green);
+}
 
-/* .self-portrait {
-  
-} */
+#img-border {
+  border-color: var(--forest-green);
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* CONTACT */
+
+#contact-btn {
+  background-color: var(--lincoln-green);
+  color: var(--light-green);
+  border: none;
+}

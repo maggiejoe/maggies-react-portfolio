@@ -37,35 +37,29 @@ function ContactForm() {
     };
   
     return (
-      <section>
-        <h1>Contact me</h1>
-
-        {/* contact info, need to add hrefs to each */}
-        <div>
-            <p>Email</p>
-            <p>GitHub</p>
-        </div>
+      <section className='py-5 text-center container'>
+        <h2 id='text-color' className='mb-4'>Contact Me</h2>
 
         {/* contact form */}
-        <form id="contact-form" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        <form id="contact-form mb-5" onSubmit={handleSubmit}>
+          <div className='pb-3'>
+            <label id='text-color' className='form-label' htmlFor="name">Name </label>
+            <input type="text" name="name" className='form-control' placeholder="Name" defaultValue={name} onBlur={handleChange} />
           </div>
-          <div>
-            <label htmlFor="email">Email address:</label>
-            <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <div className='pb-3'>
+            <label id='text-color' className='form-label' htmlFor="email">Email Address </label>
+            <input type="email" name="email" className='form-control' placeholder="Email" defaultValue={email} onBlur={handleChange} />
           </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <div className='pb-3'>
+            <label id='text-color' className='form-label' htmlFor="message">Message </label>
+            <textarea name="message" rows="8" className='form-control' placeholder="message" defaultValue={message} onBlur={handleChange} />
           </div>
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button type="submit">Submit</button>
+          <button id="contact-btn" className='py-1 px-4 btn' type="submit">Submit</button>
         </form>
       </section>
     );

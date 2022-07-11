@@ -29,30 +29,30 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  
+
   const renderPage = () => {
     if (currentCategory === 'About Me') {
-        return (
-            <About></About>
-        )
+      return (
+        <About></About>
+      )
     } else if (currentCategory === 'Portfolio') {
-        return (
-            <Portfolio></Portfolio>
-        )
+      return (
+        <Portfolio></Portfolio>
+      )
     } else if (currentCategory === 'Contact Me') {
-        return (
-            <ContactForm></ContactForm>
-        )
+      return (
+        <ContactForm></ContactForm>
+      )
     } else if (currentCategory === 'Resume') {
-        return (
-            <Resume></Resume>
-        )
+      return (
+        <Resume></Resume>
+      )
     } else {
-        return (
-            <About></About>
-        )
+      return (
+        <About></About>
+      )
     }
-}
+  }
 
   return (
     <div>
@@ -62,11 +62,9 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Header>
       <main>
-        { renderPage() }
+        {renderPage()}
       </main>
-
       <Footer></Footer>
-
     </div>
   );
 }
