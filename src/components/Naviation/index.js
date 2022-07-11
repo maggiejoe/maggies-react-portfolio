@@ -8,10 +8,10 @@ function Navigation(props) {
     } = props
 
     return (
-        <div>
+        <div className='navbar justify-content-center pb-4'>
             {categories.map((category) => (
                 <li
-                    className={`m-1 ${currentCategory.name === category.name && ""
+                    id='navText' className={`m-1 px-4 ${currentCategory.name === category.name && ""
                         }`}
                     key={category.name}
                 >

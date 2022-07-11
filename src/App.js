@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// components
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [categories] = useState([

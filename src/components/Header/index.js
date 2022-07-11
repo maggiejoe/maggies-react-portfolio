@@ -1,9 +1,5 @@
 import React from 'react';
 import Navigation from '../Naviation';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-
 
 function Header(props) {
     const {
@@ -13,21 +9,23 @@ function Header(props) {
     } = props
 
     return (
-        <Navbar sticky='top'>
-                <Container>
-                    <div>
-                        <Navbar.Brand className='m-2 fw-bolder fs-1'>Maggie Joseph</Navbar.Brand>
+        <section id='header'>
+            <header>
+                <div className=''>
+                    <div className='py-4'>
+                        <h3 id='headerText' className='fw-bolder fs-1 text-center'>Maggie Joseph</h3>
                     </div>
-                    <Nav className='nav-item'>
+                    <div className='text-center'>
                         <Navigation
                             categories={categories}
                             currentCategory={currentCategory}
                             setCurrentCategory={setCurrentCategory}
                         >
                         </Navigation>
-                    </Nav>
-                </Container>
-        </Navbar>
+                    </div>
+                </div>
+            </header>
+        </section>
     )
 }
 

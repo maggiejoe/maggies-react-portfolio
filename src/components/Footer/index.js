@@ -5,19 +5,19 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>
-            <div>
-                <li>
+        <div id='footer'>
+            <div className='text-center navbar justify-content-center py-3'>
+                <li className='px-3'>
                     <a href='https://github.com/maggiejoe' rel="noreferrer" target="_blank">
                         gitHub
                     </a>
                 </li>
-                <li>
+                <li className='px-3'>
                     <a href='https://www.linkedin.com/in/margaret-joseph' rel="noreferrer" target="_blank">
                         linkedIn
                     </a>
                 </li>
-                <li>
+                <li className='px-3'>
                     <a href='https://www.instagram.com/maggie.joe94/' rel="noreferrer" target="_blank">
                         Instagram
                     </a>
