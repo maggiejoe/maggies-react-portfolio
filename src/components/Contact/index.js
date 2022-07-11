@@ -19,13 +19,13 @@ function ContactForm() {
       if (e.target.name === 'email') {
         const isValid = validateEmail(e.target.value);
         if (!isValid) {
-          setErrorMessage('Your email is invalid.');
+          setErrorMessage('Your email is invalid. Please enter a valid email');
         } else {
           setErrorMessage('');
         }
       } else {
         if (!e.target.value.length) {
-          setErrorMessage(`${e.target.name} is required.`);
+          setErrorMessage(`A ${e.target.name} is required`);
         } else {
           setErrorMessage('');
         }

@@ -4,7 +4,7 @@ import selfPortrait from '../../assets/images/self-portrait.png';
 function About() {
     return (
         <section className='py-5 text-center'>
-            <h1 id='text-color' className='mb-4'>Hey, I'm Maggie!</h1>
+            <h1 id='text-color' className='mb-5'>Hey, I'm Maggie!</h1>
             <img src={selfPortrait} id='img-border' className='mb-4' style={{ width: "25%" }} alt='Self portrait' />
             <div>
                 <p id='text-color' className='pb-5'>

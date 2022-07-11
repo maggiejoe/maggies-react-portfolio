@@ -57,23 +57,23 @@ function Project() {
     ];
 
     return (
-        <div>
+        <div id='text-color'>
             <div>
                 {projects.map((project) => {
                     return (
                         <div>
-                            <div>
-                                <img src={project.photo} alt={project.name}>
+                            <div className='p-4'>
+                                <img className='pb-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
                                 </img>
                                 <div>
-                                    <h3>
+                                    <h4 className='pb-2'>
                                         {project.name}
-                                    </h3>
-                                    <a href={project.url}>
+                                    </h4>
+                                    <a id='links' href={project.url}>
                                         Deployable Link
                                     </a>
                                     <br />
-                                    <a href={project.gitHub}>
+                                    <a id='links' href={project.gitHub}>
                                         GitHub Repository
                                     </a>
                                 </div>
