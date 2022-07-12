@@ -14,10 +14,10 @@ Welcome to my React Portfolio! As you'll see from my deployment link below, you 
 If you would like to get in touch with me feel free to use the the contact form so we can connect!
 
 ## Screenshots
-![Here's a screenshot of the main 'About Me' page]('./src/assets/screenshots/about-screenshot.png');
-![Here's a screenshot of the 'Portfolio' page]('./src/assets/screenshots/projects-screenshot.png');
-![Here's a screenshot of the 'Contact' page]('./src/assets/screenshots/contact-screenshot.png');
-![Here's a screenshot of the 'Resume' page]('./src/assets/screenshots/resume-screenshot.png');
+![Here's a screenshot of the main 'About Me' page](./src/assets/screenshots/about-screenshot.png);
+![Here's a screenshot of the 'Portfolio' page](./src/assets/screenshots/projects-screenshot.png);
+![Here's a screenshot of the 'Contact' page](./src/assets/screenshots/contact-screenshot.png);
+![Here's a screenshot of the 'Resume' page](./src/assets/screenshots/resume-screenshot.png);
 
 ## Deployable Links
 * Click [here](https://pacific-brook-13210.herokuapp.com/) to view my deployed web application
