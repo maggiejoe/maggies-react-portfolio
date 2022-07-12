@@ -13,15 +13,25 @@ Welcome to my React Portfolio! As you'll see from my deployment link below, you 
 
 If you would like to get in touch with me feel free to use the the contact form so we can connect!
 
+
 ## Screenshots
-![Here's a screenshot of the main 'About Me' page](./src/assets/screenshots/about-screenshot.png);
-![Here's a screenshot of the 'Portfolio' page](./src/assets/screenshots/projects-screenshot.png);
-![Here's a screenshot of the 'Contact' page](./src/assets/screenshots/contact-screenshot.png);
-![Here's a screenshot of the 'Resume' page](./src/assets/screenshots/resume-screenshot.png);
+Here's a screenshot of the 'About Me' page
+!['About Me' page](./src/assets/screenshots/about-screenshot.png)
+
+Here's a screenshot of the 'Portfolio' page
+!['Portfolio' page](./src/assets/screenshots/projects-screenshot.png)
+
+Here's a screenshot of the 'Contact' page
+!['Contact' page](./src/assets/screenshots/contact-screenshot.png)
+
+Here's a screenshot of the 'Resume' page
+!['Resume' page](./src/assets/screenshots/resume-screenshot.png)
+
 
 ## Deployable Links
 * Click [here](https://pacific-brook-13210.herokuapp.com/) to view my deployed web application
 * Click [here](https://github.com/maggiejoe/c20-my-portfolio.git) to view my gitHub repository
+
 
 ## Languages Used
 * React
@@ -30,6 +40,7 @@ If you would like to get in touch with me feel free to use the the contact form 
 * JavaScript
 * BootStrap
 * Node.js
+
 
 ## Contribution
 I'm proud to say that I built this application on my own! 
