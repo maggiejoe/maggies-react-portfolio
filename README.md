@@ -15,18 +15,19 @@ If you would like to get in touch with me feel free to use the the contact form 
 
 ## Screenshots
 ![Here's a screenshot of the main 'About Me' page]('./src/assets/screenshots/about-screenshot.png');
-![Here's a screenshot of the 'Portfolio' page]('./src/assets/screenshots/projects-screenshot.png);
-![Here's a screenshot of the 'Contact' page]('./src/assets/screenshots/contact-screenshot.png);
-![Here's a screenshot of the 'Resume' page]('./src/assets/screenshots/resume-screenshot.png);
+![Here's a screenshot of the 'Portfolio' page]('./src/assets/screenshots/projects-screenshot.png');
+![Here's a screenshot of the 'Contact' page]('./src/assets/screenshots/contact-screenshot.png');
+![Here's a screenshot of the 'Resume' page]('./src/assets/screenshots/resume-screenshot.png');
 
 ## Deployable Links
-* Click [here] to view my deployed web application(https://pacific-brook-13210.herokuapp.com/)
-* Click [here] to view my gitHub repository(https://github.com/maggiejoe/c20-my-portfolio.git)
+* Click [here](https://pacific-brook-13210.herokuapp.com/) to view my deployed web application
+* Click [here](https://github.com/maggiejoe/c20-my-portfolio.git) to view my gitHub repository
 
 ## Languages Used
 * React
 * HTML
 * CSS
+* JavaScript
 * BootStrap
 * Node.js
 
