@@ -6,6 +6,7 @@ import project3 from '../../assets/images/workday-scheduler.png';
 import project4 from '../../assets/images/code-quiz.png';
 import project5 from '../../assets/images/password-generator.png';
 import project6 from '../../assets/images/first-portfolio.png';
+import project7 from '../../assets/images/eye-spy.png';
 
 
 function Project() {
@@ -51,6 +52,13 @@ function Project() {
             photo: project6,
             url: 'https://maggiejoe.github.io/Portfolio/',
             gitHub: 'https://github.com/maggiejoe/Portfolio.git'
+
+        },
+        {
+            name: 'Eye Spy',
+            photo: project7,
+            url: 'https://eye-spy-2022.herokuapp.com/',
+            gitHub: 'https://github.com/CaptainNate/eye-spy.git'
 
         }
 
