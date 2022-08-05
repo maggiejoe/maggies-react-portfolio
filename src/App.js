@@ -61,7 +61,7 @@ function App() {
         currentCategory={currentCategory}
         setCurrentCategory={setCurrentCategory}
       ></Header>
-      <main>
+      <main className="d-flex align-items-center" style = {{height:"80vh"}}>
         {renderPage()}
       </main>
       <Footer></Footer>

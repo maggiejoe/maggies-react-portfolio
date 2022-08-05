@@ -8,7 +8,7 @@ function Navigation(props) {
     } = props
 
     return (
-        <div className='navbar justify-content-center pb-4'>
+        <div className='navbar justify-content-end p-4'>
             {categories.map((category) => (
                 <li
                     id='navText' className={`m-1 px-4 ${currentCategory.name === category.name && ""

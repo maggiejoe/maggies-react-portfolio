@@ -6,7 +6,7 @@ import React from 'react';
 function Footer() {
     return (
         <div id='footer'>
-            <div className='text-center navbar justify-content-center py-3'>
+            <div className='text-center navbar d-flex justify-content-center align-items-center py-3'>
                 <li className='px-3'>
                     <a href='https://github.com/maggiejoe' rel="noreferrer" target="_blank">
                         gitHub

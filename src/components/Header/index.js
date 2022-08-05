@@ -10,11 +10,11 @@ function Header(props) {
 
     return (
         <section id='header'>
-            <header>
-                <div className=''>
-                    <div className='py-4'>
-                        <h3 id='headerText' className='fw-bolder fs-1 text-center'>Maggie Joseph</h3>
-                    </div>
+            <header className="">
+                <div className='justify-content-end align-items-end'>
+                    {/* <div className='py-4'>
+                        <h3 id='headerText' className='fw-bolder fs-1 px-4'>Maggie Joseph</h3>
+                    </div> */}
                     <div className='text-center'>
                         <Navigation
                             categories={categories}
