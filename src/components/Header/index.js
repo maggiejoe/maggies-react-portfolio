@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../Naviation';
+// import Footer from '../Footer';
 
 function Header(props) {
     const {
@@ -9,9 +10,9 @@ function Header(props) {
     } = props
 
     return (
-        <section id='header'>
-            <header className="">
-                <div className='justify-content-end align-items-end'>
+        <section id='header' className='d-flex flex-column justify-content-start align-items-center'>
+            <header className=''>
+                <div className=''>
                     {/* <div className='py-4'>
                         <h3 id='headerText' className='fw-bolder fs-1 px-4'>Maggie Joseph</h3>
                     </div> */}
@@ -23,6 +24,7 @@ function Header(props) {
                         >
                         </Navigation>
                     </div>
+                    {/* <Footer></Footer> */}
                 </div>
             </header>
         </section>

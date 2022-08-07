@@ -17,12 +17,10 @@ li {
 }
 
 main {
-  background-color: var(--light-green);
+  background-color: var(--light-green); 
 }
 
 html, body {
-  width: 100% !important;
-  height: 100% !important;
   background-color: var(--light-green) !important;
 }
 
@@ -45,6 +43,14 @@ html, body {
 
 #header {
   background-color: var(--lincoln-green);
+  height: 100vh;
+  width: 10rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  position: fixed;
+
 }
 
 #headerText {
@@ -53,6 +59,7 @@ html, body {
 
 #navText {
   color: var(--light-green);
+  width: 100%;
 }
 
 #navText:hover {

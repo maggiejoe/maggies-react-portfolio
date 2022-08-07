@@ -8,7 +8,7 @@ import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 
 function App() {
@@ -55,16 +55,18 @@ function App() {
   }
 
   return (
-    <div>
-      <Header
-        categories={categories}
-        currentCategory={currentCategory}
-        setCurrentCategory={setCurrentCategory}
-      ></Header>
-      <main className="d-flex align-items-center" style = {{height:"80vh"}}>
-        {renderPage()}
-      </main>
-      <Footer></Footer>
+    <div className='d-flex flex-wrap container'>
+      <div className='row'>
+        <Header
+          categories={categories}
+          currentCategory={currentCategory}
+          setCurrentCategory={setCurrentCategory}
+        ></Header>
+        <main className="d-flex align-items-center" style={{ height: "100vh" }}>
+          {renderPage()}
+        </main>
+        {/* <Footer></Footer> */}
+      </div>
     </div>
   );
 }
