@@ -1,12 +1,12 @@
 // import projects into portfolio
 import React from 'react';
-import project1 from '../../assets/images/lazy-plant-caretaker.png';
-import project2 from '../../assets/images/trip-it.png';
-import project3 from '../../assets/images/workday-scheduler.png';
-import project4 from '../../assets/images/code-quiz.png';
-import project5 from '../../assets/images/password-generator.png';
-import project6 from '../../assets/images/first-portfolio.png';
-import project7 from '../../assets/images/eye-spy.png';
+import project1 from '../../assets/images/first-portfolio-500x500.png';
+import project2 from '../../assets/images/code-quiz-500x500.png';
+import project3 from '../../assets/images/trip-it-500x500.png';
+import project4 from '../../assets/images/pass-generator-500x500.png';
+import project5 from '../../assets/images/work-scheduler-500x500.png';
+import project6 from '../../assets/images/plant-caretaker-500x500.png';
+import project7 from '../../assets/images/eye-spy-500x500.png';
 
 
 function Project() {
@@ -65,25 +65,27 @@ function Project() {
     ];
 
     return (
-        <div id='text-color'>
-            <div>
+        <div id='text-color' className='container'>
+            <div className='row'>
                 {projects.map((project) => {
                     return (
-                        <div>
-                            <div className='p-4'>
-                                <img className='pb-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
-                                </img>
-                                <div>
-                                    <h4 className='pb-2'>
-                                        {project.name}
-                                    </h4>
-                                    <a id='links' href={project.url}>
-                                        Deployable Link
-                                    </a>
-                                    <br />
-                                    <a id='links' href={project.gitHub}>
-                                        GitHub Repository
-                                    </a>
+                        <div className='col-4 d-flex flex-wrap justify-content-center'>
+                            <div className="">
+                                <div className=''>
+                                    <img className='pb-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
+                                    </img>
+                                    <div>
+                                        <h4 className='pb-2'>
+                                            {project.name}
+                                        </h4>
+                                        <a id='links' href={project.url}>
+                                            Deployable Link
+                                        </a>
+                                        <br />
+                                        <a id='links' href={project.gitHub}>
+                                            GitHub Repository
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

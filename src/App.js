@@ -55,17 +55,19 @@ function App() {
   }
 
   return (
-    <div className='d-flex flex-wrap container'>
-      <div className='row'>
-        <Header
-          categories={categories}
-          currentCategory={currentCategory}
-          setCurrentCategory={setCurrentCategory}
-        ></Header>
-        <main className="d-flex align-items-center" style={{ height: "100vh" }}>
-          {renderPage()}
-        </main>
-        {/* <Footer></Footer> */}
+    <div className=''>
+      <div className=''>
+        <div>
+          <Header
+            categories={categories}
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          ></Header>
+          <main >
+            {renderPage()}
+          </main>
+          {/* <Footer></Footer> */}
+        </div>
       </div>
     </div>
   );

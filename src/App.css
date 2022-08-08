@@ -18,10 +18,14 @@ li {
 
 main {
   background-color: var(--light-green); 
+  position: absolute;
+  left: 160px;
+  right: auto;
 }
 
 html, body {
   background-color: var(--light-green) !important;
+  height: 100vh;
 }
 
 #text-color {
@@ -35,7 +39,7 @@ html, body {
 
 .name-text {
   font-family: 'Carter One', cursive;
-  font-size:500%;
+  /* font-size:500%; */
 
 }
 

@@ -3,10 +3,10 @@ import React from 'react';
 
 function About() {
     return (
-        <section className='container m-5'>
-            <div className='d-flex align-items-center justify-content-start row m-3'>
-                <div className='col-10'>
-                    <div className=''>
+        <section className=''>
+            <div className='container d-flex flex-wrap justify-content-start align-items-center'  style={{ height: "100vh" }}>
+                <div className='row'>
+                    <div className='col-12 p-5'>
                         <h1 id='text-color' className='intro-text fs-4'>Hey! I'm</h1>
                         <h1 id='text-color' className='name-text'>Maggie</h1>
                         <p id='text-color' className='intro-text'>
