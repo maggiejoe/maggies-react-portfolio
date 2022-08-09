@@ -10,7 +10,7 @@ function Header(props) {
     } = props
 
     return (
-        <section id='header' className='d-flex flex-column justify-content-start align-items-center'>
+        <section id='header' className='d-flex flex-column justify-content-between align-items-center'>
             <header className=''>
                 <div className=''>
                     {/* <div className='py-4'>

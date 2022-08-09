@@ -9,22 +9,10 @@ function Resume() {
                     Click here to view my Resume
                 </a>
             </div>
-            <div className='d-flex flex-wrap justify-content-center'>
-                <div className='pb-5 px-4'>
-                    <h5 id='resume-title'>Front-End Proficiencies</h5>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Handlebars.js</li>
-                        <li>React</li>
-                        <li>Bootstrap</li>
-                        <li>jQuery</li>
-                    </ul>
-                </div>
-                <div className='pb-5 px-4'>
-                    <h5 id='resume-title'>Back-End Proficiencies</h5>
-                    <ul>
+            <div className='d-flex flex-wrap justify-content-evenly'>
+                <div className='p-3 px-3 border border-dark'>
+                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Back-End Proficiencies</h5>
+                    <ul className='p-0'>
                         <li>Node.js</li>
                         <li>Express</li>
                         <li>Local Storage</li>
@@ -38,9 +26,21 @@ function Resume() {
                         <li>MongoDB</li>
                     </ul>
                 </div>
-                <div className='pb-5 px-4'>
-                    <h5 id='resume-title'>Development Tool Proficiencies</h5>
-                    <ul>
+                <div className='p-3 px-3 border border-dark'>
+                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Front-End Proficiencies</h5>
+                    <ul className='p-0'>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Handlebars.js</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
+                <div className='p-3 px-3 border border-dark'>
+                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Development Tool Proficiencies</h5>
+                    <ul className='p-0'>
                         <li>GitBash</li>
                         <li>npm/npx</li>
                         <li>Heroku</li>

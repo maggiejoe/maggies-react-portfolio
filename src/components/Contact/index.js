@@ -41,20 +41,20 @@ function ContactForm() {
       <h2 id='text-color' className='mb-4'>Contact Me</h2>
 
       {/* contact form */}
-      <form id="contact-form d-flex justify-content-between mb-5" onSubmit={handleSubmit}>
-        <div className=''>
+      <form id="contact-form mb-5" onSubmit={handleSubmit}>
+        <div className='d-flex justify-content-center align-items-center'  style={{ height: "80vh" }}>
           <div className='col-6'>
             <div className='pb-3'>
-              <label id='text-color' className='form-label' htmlFor="name">Name </label>
+              {/* <label id='text-color' className='form-label' htmlFor="name">Name </label> */}
               <input type="text" name="name" className='form-control' placeholder="Name" defaultValue={name} onBlur={handleChange} />
             </div>
             <div className='pb-3'>
-              <label id='text-color' className='form-label' htmlFor="email">Email Address </label>
+              {/* <label id='text-color' className='form-label' htmlFor="email">Email Address </label> */}
               <input type="email" name="email" className='form-control' placeholder="Email" defaultValue={email} onBlur={handleChange} />
             </div>
             <div className='pb-3'>
-              <label id='text-color' className='form-label' htmlFor="message">Message </label>
-              <textarea name="message" rows="8" className='form-control' placeholder="message" defaultValue={message} onBlur={handleChange} />
+              {/* <label id='text-color' className='form-label' htmlFor="message">Please write a brief message below</label> */}
+              <textarea name="message" rows="8" className='form-control' placeholder="Message" defaultValue={message} onBlur={handleChange} />
             </div>
             {errorMessage && (
               <div>

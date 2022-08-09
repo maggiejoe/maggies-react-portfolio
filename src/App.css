@@ -1,10 +1,11 @@
 /* GLOBAL STYLES */
 :root {
-  --forest-green: #143203ff;
-  --blue: #a6d8e3ff;
-  --lincoln-green: #255b00ff;
-  --bright-green: #d3fa81ff;
-  --light-green: #edffd6ff;
+  --kombu-green: #3A553B;
+  --hunter-green: #3E5C3F;
+  --dark-green: #314933;
+  --sea-green: #A5CA96;
+  --black: #010101;
+  --white: #FCFCF6;
 }
 
 * {
@@ -17,38 +18,56 @@ li {
 }
 
 main {
-  background-color: var(--light-green); 
+  background-color: var(--hunter-green); 
   position: absolute;
   left: 160px;
   right: 0;
 }
 
 html, body {
-  background-color: var(--light-green) !important;
+  background-color: var(--hunter-green) !important;
   height: 100vh;
   right: 0;
 
 }
 
 #text-color {
-  color: var(--forest-green);
+  color: var(--sea-green);
 }
 
 .intro-text {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 600;
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  color: var(--sea-green);
 }
 
 .name-text {
-  font-family: 'Carter One', cursive;
-  /* font-size:500%; */
+  font-family: 'Rock Salt', cursive;
+  font-size: 500%;
+  color: var(--black);
+}
 
+.name-text-2 {
+  font-family: 'Rock Salt', cursive;
+  color: var(--black);
+}
+
+.name-text-header {
+  font-family: 'Rock Salt', cursive;
+  font-size: xx-large;
+  color: var(--black);
+}
+
+.all-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: var(--white);
 }
 
 /* HEADER/NAVIGATION */
 
 #header {
-  background-color: var(--lincoln-green);
+  background-color: var(--kombu-green);
   height: 100vh;
   width: 10rem;
   top: 0;
@@ -60,16 +79,20 @@ html, body {
 }
 
 #headerText {
-  color: var(--light-green);
+  color: var(--sea-green);
 }
 
 #navText {
-  color: var(--light-green);
+  color: var(--white);
   width: 100%;
 }
 
 #navText:hover {
-  color: var(--blue);
+  color: var(--sea-green);
+}
+
+.nav-bg {
+  background-color: var(--dark-green);
 }
 
 /* FOOTER */
