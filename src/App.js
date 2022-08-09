@@ -14,16 +14,16 @@ import Resume from './components/Resume';
 function App() {
   const [categories] = useState([
     {
-      name: 'About Me'
+      name: 'About'
     },
     {
-      name: 'Portfolio'
+      name: 'Work'
     },
     {
-      name: 'Contact Me'
+      name: 'Contact'
     },
     {
-      name: 'Resume'
+      name: 'Skills'
     }
   ]);
 
@@ -31,19 +31,19 @@ function App() {
 
 
   const renderPage = () => {
-    if (currentCategory === 'About Me') {
+    if (currentCategory === 'About') {
       return (
         <About></About>
       )
-    } else if (currentCategory === 'Portfolio') {
+    } else if (currentCategory === 'Work') {
       return (
         <Portfolio></Portfolio>
       )
-    } else if (currentCategory === 'Contact Me') {
+    } else if (currentCategory === 'Contact') {
       return (
         <ContactForm></ContactForm>
       )
-    } else if (currentCategory === 'Resume') {
+    } else if (currentCategory === 'Skills') {
       return (
         <Resume></Resume>
       )

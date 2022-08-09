@@ -38,11 +38,11 @@ function ContactForm() {
 
   return (
     <section className='py-5 text-center container'>
-      <h2 id='text-color' className='mb-4'>Contact Me</h2>
+      <h2 id='text-color' className='pb-3 mb-5 border-bottom border-dark'>Contact Me</h2>
 
       {/* contact form */}
       <form id="contact-form mb-5" onSubmit={handleSubmit}>
-        <div className='d-flex justify-content-center align-items-center'  style={{ height: "80vh" }}>
+        <div className='d-flex justify-content-center'  style={{ height: "80vh" }}>
           <div className='col-6'>
             <div className='pb-3'>
               {/* <label id='text-color' className='form-label' htmlFor="name">Name </label> */}
@@ -61,7 +61,7 @@ function ContactForm() {
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <button id="contact-btn" className='py-1 px-4 btn' type="submit">Submit</button>
+            <button className='contact-btn py-1 px-4 rounded-3 border border-dark shadow-lg' type="submit">Submit</button>
           </div>
         </div>
       </form>
