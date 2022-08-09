@@ -3,9 +3,9 @@ import Project from '../Project';
 
 function Portfolio() {
     return (
-        <div id='text-color' className='container'>
-            <div className='row'>
-                <h2 className=''>My Projects</h2>
+        <div id='text-color' className=''>
+            <div className=''>
+                <h2 className='d-flex justify-content-center m-5'>My Projects</h2>
                 <div className=''>
                     <Project />
                 </div>

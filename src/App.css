@@ -20,12 +20,14 @@ main {
   background-color: var(--light-green); 
   position: absolute;
   left: 160px;
-  right: auto;
+  right: 0;
 }
 
 html, body {
   background-color: var(--light-green) !important;
   height: 100vh;
+  right: 0;
+
 }
 
 #text-color {

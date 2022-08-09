@@ -69,15 +69,15 @@ function Project() {
             <div className='row'>
                 {projects.map((project) => {
                     return (
-                        <div className='col-4 d-flex flex-wrap justify-content-center'>
-                            <div className="">
-                                <div className=''>
-                                    <img className='pb-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
+                        <div className='col-4 d-flex flex-wrap text-center pb-4'>
+                            <div className="border border-dark">
+                                <div className='p-3'>
+                                    <h4 className='pb-3 border-bottom border-dark'>
+                                        {project.name}
+                                    </h4>
+                                    <img className='pb-3 mt-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
                                     </img>
                                     <div>
-                                        <h4 className='pb-2'>
-                                            {project.name}
-                                        </h4>
                                         <a id='links' href={project.url}>
                                             Deployable Link
                                         </a>
