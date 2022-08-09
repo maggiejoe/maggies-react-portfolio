@@ -144,6 +144,11 @@ li a:hover {
   color: var(--blue);
 }
 
-#resume-title {
-  color: var(--lincoln-green);
+.resume-bg {
+  background-color: var(--dark-green);
+  color: var(--sea-green);
+}
+
+.resume-title {
+  color: var(--white);
 }

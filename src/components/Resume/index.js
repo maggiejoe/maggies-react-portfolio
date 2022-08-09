@@ -4,14 +4,14 @@ function Resume() {
     return (
         <div id='text-color' className='text-center p-5'>
             <div className='pb-5'>
-                <h2 className='pb-2'>Resume</h2>
+                <h2 className='pb-3 mb-5 border-bottom border-dark'>Resume</h2>
                 <a id='resume' href='https://drive.google.com/file/d/1NNAUDpiuuY8DYmOMFoztzKa6CqK7dLiP/view?usp=sharing' rel="noreferrer" target="_blank">
                     Click here to view my Resume
                 </a>
             </div>
             <div className='d-flex flex-wrap justify-content-evenly'>
-                <div className='p-3 px-3 border border-dark'>
-                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Back-End Proficiencies</h5>
+                <div className='p-3 px-3 resume-bg shadow-lg border border-2 border-dark rounded-3'>
+                    <h5 id='resume-title' className='resume-title mb-3 pb-3 border-bottom border-dark'>Back-End Proficiencies</h5>
                     <ul className='p-0'>
                         <li>Node.js</li>
                         <li>Express</li>
@@ -26,8 +26,8 @@ function Resume() {
                         <li>MongoDB</li>
                     </ul>
                 </div>
-                <div className='p-3 px-3 border border-dark'>
-                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Front-End Proficiencies</h5>
+                <div className='p-3 px-3  resume-bg shadow-lg border border-2 border-dark rounded-3'>
+                    <h5 id='resume-title' className='resume-title mb-3 pb-3 border-bottom border-dark'>Front-End Proficiencies</h5>
                     <ul className='p-0'>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -38,8 +38,8 @@ function Resume() {
                         <li>jQuery</li>
                     </ul>
                 </div>
-                <div className='p-3 px-3 border border-dark'>
-                    <h5 id='resume-title' className='mb-3 pb-3 border-bottom border-dark'>Development Tool Proficiencies</h5>
+                <div className='p-3 px-3 resume-bg shadow-lg border border-2 border-dark rounded-3'>
+                    <h5 id='resume-title' className='resume-title mb-3 pb-3 border-bottom border-dark'>Development Tool Proficiencies</h5>
                     <ul className='p-0'>
                         <li>GitBash</li>
                         <li>npm/npx</li>
