@@ -137,16 +137,9 @@ li a:hover {
   color: var(--white);
 }
 
-/* RESUME & PORTFOLIO */
+/* WORK */
 
-#resume, #links {
-  text-decoration: none;
-  color: var(--forest-green);
-}
-
-#resume:hover, #links:hover {
-  color: var(--blue);
-}
+/* SKILLS */
 
 .resume-bg {
   background-color: var(--dark-green);

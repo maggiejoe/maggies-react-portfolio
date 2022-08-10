@@ -64,24 +64,24 @@ function Project() {
     ];
 
     return (
-        <div id='text-color' className='container'>
+        <div className='container'>
             <div className='row'>
                 {projects.map((project) => {
                     return (
-                        <div className='col-4 d-flex flex-wrap text-center pb-4'>
-                            <div className="border border-dark">
-                                <div className='p-3'>
-                                    <h4 className='pb-3 border-bottom border-dark'>
-                                        {project.name}
-                                    </h4>
-                                    <img className='pb-3 mt-3' src={project.photo} alt={project.name} style={{ width: '50%' }}>
+                        <div className='col-3 d-flex flex-wrap text-center pb-4'>
+                            <div className="card border-dark border-2 shadow-lg">
+                                <div className='shadow-lg rounded-3'>
+                                    <img className='card-img' src={project.photo} alt={project.name}>
                                     </img>
-                                    <div>
-                                        <a id='links' href={project.url}>
+                                    <div className='card-img-overlay row d-flex flex-wrap justify-content-center align-items-center'>
+                                        <h4 className='card-title pb-3 border-bottom border-dark'>
+                                            {project.name}
+                                        </h4>
+                                        <a className='card-text text-decoration-none' href={project.url}>
                                             Deployable Link
                                         </a>
                                         <br />
-                                        <a id='links' href={project.gitHub}>
+                                        <a className='card-text text-decoration-none' href={project.gitHub}>
                                             GitHub Repository
                                         </a>
                                     </div>
