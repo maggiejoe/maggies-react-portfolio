@@ -29,7 +29,7 @@ Here's a screenshot of the 'Resume' page
 
 
 ## Deployable Links
-* Click [here](https://pacific-brook-13210.herokuapp.com/) to view my deployed web application
+* Click [here](https://maggies-react-portfolio.herokuapp.com/) to view my deployed web application
 * Click [here](https://github.com/maggiejoe/c20-my-portfolio.git) to view my gitHub repository
 
 
