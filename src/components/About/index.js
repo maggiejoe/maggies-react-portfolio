@@ -18,7 +18,7 @@ function About() {
                         I have well rounded knowledge of the MERN stack in addition to several other development methods. While front end development is where I truly shine, I do have a wide range of knowledge on back end development. From object oriented programing to progressive web applications, I can take all the skills I've learned and create engaging and useful web applications. 
                         < br/>
                         < br/>
-                        I am self motivated, a problem solver and have a high attention to detail.<span className='name-text-2'><a href='/' className='text-decoration-none name-text-2'> Let's Collaborate !</a></span>
+                        I am self motivated, a problem solver and have a high attention to detail. <span className='name-text-2'>Let's Collaborate !</span>
                         < br/>
                         < br/>
                     </p>

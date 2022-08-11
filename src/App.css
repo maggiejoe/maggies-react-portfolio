@@ -94,6 +94,15 @@ html, body {
   color: var(--sea-green);
 }
 
+.header-icon {
+  font-size: 30px;
+  color: var(--white);
+}
+
+.header-icon:hover {
+  color: var(--sea-green);
+}
+
 #navText {
   color: var(--white);
   width: 100%;
@@ -105,36 +114,6 @@ html, body {
 
 .nav-bg {
   background-color: var(--dark-green);
-}
-
-/* FOOTER */
-
-li a {
-  text-decoration: none;
-  color: var(--light-green);
-}
-
-li a:hover {
-  color: var(--blue);
-}
-
-#footer {
-  background-color: var(--lincoln-green);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* ABOUT */
-
-#about {
-  color: var(--forest-green);
-}
-
-#img-border {
-  border-color: var(--forest-green);
-  border-width: 3px;
-  border-style: solid;
 }
 
 /* CONTACT */

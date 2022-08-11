@@ -10,9 +10,15 @@ function Header(props) {
     } = props
 
     return (
-        <section id='header' className='d-flex flex-column justify-content-between align-items-center shadow-lg'>
+        <section id='header' className='d-flex justify-content-between' >
             <header className=''>
-                <div className=''>
+                <div className='d-flex flex-wrap flex-column justify-content-between' style={{height: '100%'}}>
+                    <a className='text-decoration-none' href='/'>
+                    <div className=' nav-bg d-flex flex-wrap pt-4 pb-4 align-items-start justify-content-center shadow-lg'>
+                        <h1 className='name-text-header'>Maggie</h1>
+                        <p className='all-text'>Web Developer</p>
+                    </div>
+                    </a>
                     <div className='text-center'>
                         <Navigation
                             categories={categories}
@@ -21,7 +27,20 @@ function Header(props) {
                         >
                         </Navigation>
                     </div>
-                    {/* <Footer></Footer> */}
+                    <div className='container d-flex flex-wrap'>
+                        <ul className=' row'>
+                            <li className='col-6'>
+                                <a href="https://github.com/maggiejoe">
+                                    <span className='bi bi-github header-icon'></span>
+                                </a>
+                            </li>
+                            <li className='col-6'>
+                                <a href="https://www.linkedin.com/in/margaret-joseph-5b673716a/">
+                                    <span className='bi bi-linkedin header-icon'></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>
         </section>
