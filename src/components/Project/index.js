@@ -32,14 +32,14 @@ function Project() {
 
         },
         {
-            name: 'Code Quiz',
+            name: 'Password Generator',
             photo: project4,
             url: 'https://maggiejoe.github.io/password-generator/',
             gitHub: 'https://github.com/maggiejoe/password-generator.git'
 
         },
         {
-            name: 'Password Generator',
+            name: 'Workday Scheduler',
             photo: project5,
             url: 'https://maggiejoe.github.io/work-day-scheduler/',
             gitHub: 'https://github.com/maggiejoe/work-day-scheduler.git'
@@ -68,25 +68,19 @@ function Project() {
             <div className='row'>
                 {projects.map((project) => {
                     return (
-                        <div className='col-3 d-flex flex-wrap text-center pb-4'>
-                            <div className="card border-dark border-2 shadow-lg">
-                                <div className='shadow-lg rounded-3'>
-                                    <img className='card-img' src={project.photo} alt={project.name}>
+                        <div className='col-3 d-flex mb-4'>
+                            <a target='_blank' rel='noreferrer' href={project.url}>
+                                <div className="project-card card border-dark border-2 shadow-lg rounded-3">
+                                    <img className='card-img shadow-lg' src={project.photo} alt={project.name}>
                                     </img>
-                                    <div className='card-img-overlay row d-flex flex-wrap justify-content-center align-items-center'>
-                                        <h4 className='card-title pb-3 border-bottom border-dark'>
-                                            {project.name}
-                                        </h4>
-                                        <a className='card-text text-decoration-none' href={project.url}>
-                                            Deployable Link
-                                        </a>
-                                        <br />
-                                        <a className='card-text text-decoration-none' href={project.gitHub}>
-                                            GitHub Repository
+                                    <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                                        {/* <h1 className='project-title'>{project.name}</h1> */}
+                                        <a target='_blank' rel='noreferrer' href={project.gitHub}>
+                                            <span className='bi bi-github work-icon'></span>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     );
                 })}

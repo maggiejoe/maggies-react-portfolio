@@ -38,7 +38,7 @@ function ContactForm() {
 
   return (
     <section className='py-5 text-center container'>
-      <h2 id='text-color' className='pb-3 mb-5 border-bottom border-dark'>Contact Me</h2>
+      <h2 className='titles text-color pb-3 mb-5 border-bottom border-dark'>Contact Me</h2>
 
       {/* contact form */}
       <form id="contact-form mb-5" onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ function ContactForm() {
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <button className='contact-btn py-1 px-4 rounded-3 border border-dark shadow-lg' type="submit">Submit</button>
+            <button className='all-text contact-btn py-1 px-4 rounded-3 border border-dark shadow-lg' type="submit">Submit</button>
           </div>
         </div>
       </form>

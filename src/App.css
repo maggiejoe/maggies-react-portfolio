@@ -31,7 +31,7 @@ html, body {
 
 }
 
-#text-color {
+.text-color {
   color: var(--sea-green);
 }
 
@@ -52,6 +52,10 @@ html, body {
   color: var(--black);
 }
 
+.name-text-2:hover {
+  color: var(--sea-green);
+}
+
 .name-text-header {
   font-family: 'Rock Salt', cursive;
   font-size: xx-large;
@@ -62,6 +66,14 @@ html, body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   color: var(--white);
+}
+
+.titles {
+  font-family: 'Rock Salt', cursive;
+}
+
+.sub-text {
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* HEADER/NAVIGATION */
@@ -138,6 +150,25 @@ li a:hover {
 }
 
 /* WORK */
+.work-icon {
+  font-size: 30px;
+  color: var(--black);
+}
+
+.work-icon:hover {
+  color: var(--sea-green);
+}
+
+.project-card {
+  padding: 0;
+}
+
+.project-card:hover {
+  background-color: var(--white);
+  opacity: 50%;
+  padding: 0;
+  height: auto;
+}
 
 /* SKILLS */
 
@@ -148,4 +179,8 @@ li a:hover {
 
 .resume-title {
   color: var(--white);
+}
+
+.resume:hover {
+  color: var(--sea-green);
 }
