@@ -7,7 +7,7 @@ function Resume() {
                 <h2 className='titles text-color pb-3 mb-5 border-bottom border-dark'>Skills</h2>
             </div>
             <div className='d-flex flex-wrap justify-content-evenly'>
-            <a className='resume col-12 pb-3 mb-5 text-decoration-none all-text' href='https://drive.google.com/file/d/1NNAUDpiuuY8DYmOMFoztzKa6CqK7dLiP/view?usp=sharing' rel="noreferrer" target="_blank">
+            <a className='resume col-12 pb-3 mb-5 text-decoration-none all-text' href='https://drive.google.com/file/d/1a3TgD03Yk_S0W_UH1l2n1N0b3aALnymG/view?usp=sharing' rel="noreferrer" target="_blank">
                     Click here to view my Resume
                 </a>
                 <div className='p-3 px-3 resume-bg shadow-lg border border-2 border-dark rounded-3'>

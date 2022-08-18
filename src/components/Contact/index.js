@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
 
   // input validations
   const handleChange = (e) => {
@@ -36,13 +30,24 @@ function ContactForm() {
     }
   };
 
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0hj3rgb', 'template_39hmh03', "#contactForm", 'iskQ2EzJDVVCqiAV2')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
+
   return (
     <section className='py-5 text-center container'>
       <h2 className='titles text-color pb-3 mb-5 border-bottom border-dark'>Contact Me</h2>
 
       {/* contact form */}
-      <form id="contact-form mb-5" onSubmit={handleSubmit}>
-        <div className='d-flex justify-content-center'  style={{ height: "80vh" }}>
+      <form id="contact-form mb-5" onSubmit={sendEmail}>
+        <div className='d-flex justify-content-center' style={{ height: "80vh" }}>
           <div className='col-6'>
             <div className='pb-3'>
               {/* <label id='text-color' className='form-label' htmlFor="name">Name </label> */}
