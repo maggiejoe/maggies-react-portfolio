@@ -1,17 +1,23 @@
-# My React Portfolio
+# Maggie's React Portfolio
 
 
 ## Table of Contents
   * [Description](#description)
   * [Screenshots](#screenshots)
   * [Deployment](#deployable-links)
-  * [Languages Used](#languages-used)
+  * [Technologies Used](#technologies-used)
   * [Contribution](#contribution)
 
-## Description
-Welcome to my React Portfolio! As you'll see from my deployment link below, you can view some of the work I've done up until this point through my coding course with the University of Toronto. If you'd like to see all the skills I've learned, feel free to checkout the 'resume' section where you'll see all my new proficiencies and knowledge gained over the past few months. 
 
-If you would like to get in touch with me feel free to use the the contact form so we can connect!
+## Description
+Welcome to my React Portfolio! As you'll see from my deployment link below, you can view some of the work I've done up until this point through my coding course with the University of Toronto. If you'd like to see all the skills I've learned, feel free to checkout the 'Skills' section where you'll see all proficiencies and knowledge gained over the past few months. 
+
+If you would like to get in touch with me feel free to use the the contact form or email so we can connect!
+
+
+## Deployable Links
+* Click [here](https://maggies-react-portfolio.herokuapp.com/) to view my deployed web application
+* Click [here](https://github.com/maggiejoe/c20-my-portfolio.git) to view my gitHub repository
 
 
 ## Screenshots
@@ -28,12 +34,7 @@ Here's a screenshot of the 'Resume' page
 !['Resume' page](./src/assets/screenshots/resume-screenshot.png)
 
 
-## Deployable Links
-* Click [here](https://maggies-react-portfolio.herokuapp.com/) to view my deployed web application
-* Click [here](https://github.com/maggiejoe/c20-my-portfolio.git) to view my gitHub repository
-
-
-## Languages Used
+## Technologies Used
 * React
 * HTML
 * CSS
