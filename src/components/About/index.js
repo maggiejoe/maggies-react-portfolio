@@ -7,7 +7,7 @@ function About() {
                 <div className='row'>
                     <div className='col-12 p-5'>
                         <h1 className='intro-text fs-4 pb-4'>Hey! I'm</h1>
-                        <h1 className='name-text pb-4'>Maggie</h1>
+                        <h1 className='name-text pb-4'>Maggie Joseph</h1>
                         <p className='all-text intro-text'>
                         <span className='intro-text'>A Full Stack Web Developer with a passion for Front End Development</span>
                         < br/>

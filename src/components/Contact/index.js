@@ -49,6 +49,11 @@ function ContactForm() {
   return (
     <section className='py-5 text-center container'>
       <h2 className='titles text-color pb-3 mb-5 border-bottom border-dark'>Contact Me</h2>
+      <p>
+        <a href="mailto:maggiejoseph94@gmail.com" className="text-decoration-none text-color-link">
+          Click here to shoot me an email!
+        </a>
+      </p>
 
       {/* contact form */}
       <form id="contactForm" onSubmit={sendEmail}>

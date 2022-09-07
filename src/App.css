@@ -128,6 +128,14 @@ html, body {
   color: var(--white);
 }
 
+.text-color-link {
+  color: var(--sea-green);
+}
+
+.text-color-link:hover {
+  color: var(--white);
+}
+
 /* WORK */
 .work-icon {
   font-size: 30px;
