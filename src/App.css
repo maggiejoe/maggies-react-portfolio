@@ -128,12 +128,8 @@ html, body {
   color: var(--white);
 }
 
-.text-color-link {
+.all-text:hover {
   color: var(--sea-green);
-}
-
-.text-color-link:hover {
-  color: var(--white);
 }
 
 /* WORK */

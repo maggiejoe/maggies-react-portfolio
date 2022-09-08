@@ -10,22 +10,6 @@ function Resume() {
             <a className='resume col-12 pb-3 mb-5 text-decoration-none all-text' href='https://docs.google.com/document/d/1T2WwFFXlblh5qD4dxrY58yrIa2yeutZc/edit?usp=sharing&ouid=115031440642027694129&rtpof=true&sd=true' rel="noreferrer" target="_blank">
                     Click here to view my Resume
                 </a>
-                <div className='p-3 px-3 resume-bg shadow-lg border border-2 border-dark rounded-3'>
-                    <h5 id='resume-title' className='titles resume-title mb-3 pb-3 border-bottom border-dark'>Back-End Proficiencies</h5>
-                    <ul className='p-0 sub-text'>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Local Storage</li>
-                        <li>IndexedDB</li>
-                        <li>Object Oriented Programming (OOP)</li>
-                        <li>Object Relational Mapping (ORM)</li>
-                        <li>Model-View-Control (MVC)</li>
-                        <li>Progressive Web Applications (PWA)</li>
-                        <li>MERN</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
                 <div className='p-3 px-3  resume-bg shadow-lg border border-2 border-dark rounded-3'>
                     <h5 id='resume-title' className='titles resume-title mb-3 pb-3 border-bottom border-dark'>Front-End Proficiencies</h5>
                     <ul className='p-0 sub-text'>
@@ -47,6 +31,22 @@ function Resume() {
                         <li>Insomnia</li>
                         <li>Jest</li>
                         <li>Webpack</li>
+                    </ul>
+                </div>
+                <div className='p-3 px-3 resume-bg shadow-lg border border-2 border-dark rounded-3'>
+                    <h5 id='resume-title' className='titles resume-title mb-3 pb-3 border-bottom border-dark'>Back-End Proficiencies</h5>
+                    <ul className='p-0 sub-text'>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Local Storage</li>
+                        <li>IndexedDB</li>
+                        <li>Object Oriented Programming (OOP)</li>
+                        <li>Object Relational Mapping (ORM)</li>
+                        <li>Model-View-Control (MVC)</li>
+                        <li>Progressive Web Applications (PWA)</li>
+                        <li>MERN</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
                     </ul>
                 </div>
             </div>
