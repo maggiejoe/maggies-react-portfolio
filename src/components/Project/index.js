@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 // react bootstrap imports
 import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
 
 // component import
 import ProjectModals from '../ProjectModals';
@@ -56,8 +57,6 @@ function Project() {
     // useState variables for modals
     const [modalShow, setModalShow] = useState(false);
 
-    const handleClose = () => setModalShow(false);
-    const handleOpen = () => setModalShow(true);
 
     return (
         <div className='container'>
@@ -65,19 +64,20 @@ function Project() {
                 {projects.map((project) => {
                     return (
                         <div className='col-3 d-flex mb-4'>
-                            <Button onClick={handleOpen} className="project-card card p-0 border-none border-dark shadow-lg rounded-3">
-                                <img className='card-img shadow-lg' src={project.photo} alt="...">
+                            <Button onClick={() => setModalShow(true)} className="project-card card p-0 border-none border-dark shadow-lg rounded-3">
+                                <img className='card-img shadow-lg' src={project.photo} alt={project.name}>
                                 </img>
                             </Button>
-                            {/* MODAL */}
-                            <ProjectModals
-                                show={modalShow}
-                                onHide={handleClose}
-                            >
-                            </ProjectModals>
+
                         </div>
                     );
                 })}
+                {/* MODAL */}
+                <ProjectModals
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                >
+                </ProjectModals>
 
             </div>
         </div>

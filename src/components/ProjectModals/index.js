@@ -56,42 +56,45 @@ function Modals(props) {
             techSkills: 'HTML, CSS, BootStrap, JavaScript, React, Mongoose, MongoDB, graphQL, Node.js, Express, JWT Authentication'
         }
     ];
-    
+
+
     return (
         <div>
-            {modalData.map((data) => (
-                <Modal
-                    {...props}
-                    size="lg"
-                    aria-labelledby="contained-modal-title-vcenter"
-                    centered
-                >
-                    <Modal.Header closeButton className="border-dark">
-                        <Modal.Title className="" id="modal-title">
-                            {data.name}
-                        </Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body className="container">
-                        <p>
-                            {data.summary}
-                        </p>
+            {modalData.map((data, index) => {
+                return (
+                    <Modal
+                        {...props}
+                        size="lg"
+                        aria-labelledby="contained-modal-title-vcenter"
+                        centered
+                    >
+                       <Modal.Header closeButton className="border-dark">
+                            <Modal.Title className="" id="modal-title" key={index}>
+                                {data.name}
+                            </Modal.Title>
+                        </Modal.Header>
 
-                        <br />
+                        <Modal.Body className="container">
+                            <p>
+                                {data.summary}
+                            </p>
 
-                        <p>
-                            {data.techSkills}
-                        </p>
-                    </Modal.Body>
-                    <Modal.Footer className="modal-bg border-dark">
-                        <Button id="modal-button" className="" target='_blank' rel='noreferrer' href={data.url}>View live app here!</Button>
-                        <Button id="modal-button" className="" target='_blank' rel='noreferrer' href={data.gitHub}>
-                            <span className='bi bi-github work-icon'></span>
-                        </Button>
-                        <Button onClick={props.onRequestClose} id="modal-button" className="">Close</Button>
-                    </Modal.Footer>
-                </Modal>
-            ))}
-            
+                            <br />
+
+                            <p>
+                                {data.techSkills}
+                            </p>
+                        </Modal.Body>
+                        <Modal.Footer className="modal-bg border-dark">
+                            <Button id="modal-button" className="" target='_blank' rel='noreferrer' href={data.url}>View live app here!</Button>
+                            <Button id="modal-button" className="" target='_blank' rel='noreferrer' href={data.gitHub}>
+                                <span className='bi bi-github work-icon'></span>
+                            </Button>
+                        </Modal.Footer>
+                    </Modal>
+                );
+            })}
+
         </div>
     )
 }
