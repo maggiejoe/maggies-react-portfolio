@@ -1,6 +1,9 @@
 // import projects into portfolio
 import React, { useState } from 'react';
 
+// react bootstrap imports
+import Button from 'react-bootstrap/Button';
+
 // component import
 import ProjectModals from '../ProjectModals';
 
@@ -53,25 +56,29 @@ function Project() {
     // useState variables for modals
     const [modalShow, setModalShow] = useState(false);
 
+    const handleClose = () => setModalShow(false);
+    const handleOpen = () => setModalShow(true);
+
     return (
         <div className='container'>
             <div className='row'>
                 {projects.map((project) => {
                     return (
                         <div className='col-3 d-flex mb-4'>
-                            <div className="project-card card border-none border-dark shadow-lg rounded-3">
-                                <img className='card-img shadow-lg' src={project.photo} alt={project.name} onClick={() => setModalShow(true)}>
+                            <Button onClick={handleOpen} className="project-card card p-0 border-none border-dark shadow-lg rounded-3">
+                                <img className='card-img shadow-lg' src={project.photo} alt="...">
                                 </img>
-                            </div>
+                            </Button>
+                            {/* MODAL */}
+                            <ProjectModals
+                                show={modalShow}
+                                onHide={handleClose}
+                            >
+                            </ProjectModals>
                         </div>
                     );
                 })}
-                {/* MODAL */}
-                <ProjectModals
-                    isOpen={modalShow}
-                    onRequestClose={() => setModalShow(false)}
-                >
-                </ProjectModals>
+
             </div>
         </div>
     );

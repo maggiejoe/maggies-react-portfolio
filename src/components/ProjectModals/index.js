@@ -56,10 +56,10 @@ function Modals(props) {
             techSkills: 'HTML, CSS, BootStrap, JavaScript, React, Mongoose, MongoDB, graphQL, Node.js, Express, JWT Authentication'
         }
     ];
-
+    
     return (
         <div>
-            {modalData.map((data, props) => (
+            {modalData.map((data) => (
                 <Modal
                     {...props}
                     size="lg"
