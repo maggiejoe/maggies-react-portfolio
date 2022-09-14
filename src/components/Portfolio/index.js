@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project';
+import Projects from '../Projects';
 
 function Portfolio() {
     return (
@@ -7,7 +7,7 @@ function Portfolio() {
             <div className=''>
                 <h2 className='titles text-color d-flex justify-content-center pb-3 m-5 border-bottom border-dark'>My Work</h2>
                 <div className=''>
-                    <Project />
+                    <Projects />
                 </div>
             </div>
         </div>
