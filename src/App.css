@@ -128,7 +128,13 @@ html, body {
   color: var(--white);
 }
 
-.all-text:hover {
+.contact-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.contact-text:hover {
   color: var(--sea-green);
 }
 
