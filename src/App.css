@@ -139,19 +139,18 @@ html, body {
 }
 
 .work-icon:hover {
-  color: var(--sea-green);
-}
-
-.project-card {
-  padding: 0;
+  color: var(--white);
 }
 
 .project-card:hover {
-  background-color: var(--white);
-  opacity: 50%;
-  padding: 0;
-  height: auto;
-  border-color: var(--black);
+  background: rgba(255, 255, 255, 0.8);
+  overflow-y: scroll;
+  height: 100%;
+  
+}
+
+.hover-text {
+  color: var(--black);
 }
 
 /* SKILLS */

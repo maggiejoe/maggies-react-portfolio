@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 // project images
 import project1 from '../../assets/images/first-portfolio-500x500.png';
@@ -101,28 +101,29 @@ function Projects() {
                 {/* Project 1 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/Portfolio/' onMouseOver={handleMouseOverP1} onMouseOut={handleMouseOutP1}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project1} alt='Project 1'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project1} alt='Project 1'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start text-center'>
                                 {isHoveringP1 &&
-                                    <Col>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>This was one of the first applications built with the University of Toronto. I challenged my abilities with the technologies below to show you a little bit of who I am and what I've done.</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>HTML, CSS</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/Portfolio.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/Portfolio.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -131,28 +132,29 @@ function Projects() {
                 {/* Project 2 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/code-quiz/' onMouseOver={handleMouseOverP2} onMouseOut={handleMouseOutP2}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project2} alt='Project 2'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project2} alt='Project 2'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP2 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Code Quiz</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>This was a quiz I built to test my ability to combine all of the technologies below.</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>HTML, CSS, JavaScript, LocalStorage</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/code-quiz.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/code-quiz.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -160,28 +162,29 @@ function Projects() {
                 {/* Project 3 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://p1group5.github.io/trip-it/' onMouseOver={handleMouseOverP3} onMouseOut={handleMouseOutP3}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project3} alt='Project 3'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project3} alt='Project 3'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP3 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/P1Group5/trip-it.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/P1Group5/trip-it.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -189,28 +192,29 @@ function Projects() {
                 {/* Project 4 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/password-generator/' onMouseOver={handleMouseOverP4} onMouseOut={handleMouseOutP4}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project4} alt='Project 4'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project4} alt='Project 4'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP4 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/password-generator.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/password-generator.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -218,28 +222,29 @@ function Projects() {
                 {/* Project 5 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/work-day-scheduler/' onMouseOver={handleMouseOverP5} onMouseOut={handleMouseOutP5}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project5} alt='Project 5'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project5} alt='Project 5'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP5 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/work-day-scheduler.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/maggiejoe/work-day-scheduler.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -247,28 +252,29 @@ function Projects() {
                 {/* Project 6 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://lazy-plant-caretaker.herokuapp.com/' onMouseOver={handleMouseOverP6} onMouseOut={handleMouseOutP6}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project6} alt='Project 6'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project6} alt='Project 6'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP6 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
+                                        <a target='_blank' rel='noreferrer' href='https://github.com/project02group12/lazy-plant-caretaker.git'>
+                                            <span className='bi bi-github work-icon'></span>
+                                        </a>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/project02group12/lazy-plant-caretaker.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
+
                             </div>
                         </div>
                     </a>
@@ -276,28 +282,30 @@ function Projects() {
                 {/* Project 7 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://eye-spy-2022.herokuapp.com/' onMouseOver={handleMouseOverP7} onMouseOut={handleMouseOutP7}>
-                        <div className="project-card card border-dark border-2 shadow-lg rounded-3">
-                            <img className='card-img shadow-lg' src={project7} alt='Project 7'>
+                        <div className="card border-dark border-2 shadow-lg rounded-3">
+                            <img className='shadow-lg' src={project7} alt='Project 7'>
                             </img>
-                            <div className='card-img-overlay d-flex justify-content-start align-items-end px-1 py-0'>
+                            <div className='project-card card-img-overlay d-flex justify-content-start align-items-start px-1 py-0'>
                                 {isHoveringP7 &&
-                                    <Col className='text-decoration-none'>
+                                    <Col className='hover-text text-center align-items-center p-0 m-0'>
                                         <div>
-                                            <h1>Title</h1>
+                                            <h1 className='fs-3 fw-bolder'>Basic Portfolio</h1>
                                         </div>
                                         <div>
-                                            <h2>Project Overview</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Project Overview</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
                                         </div>
                                         <div>
-                                            <h2>Technologies Used</h2>
-                                            <p>Lorem Ipsum</p>
+                                            <h2 className='fs-5 fw-bolder'>Technologies Used</h2>
+                                            <p className='fs-6 fst-italic'>Lorem Ipsum</p>
+                                        </div>
+                                        <div>
+                                            <a className='' target='_blank' rel='noreferrer' href='https://github.com/CaptainNate/eye-spy.git'>
+                                                <span className='bi bi-github work-icon'></span>
+                                            </a>
                                         </div>
                                     </Col>
                                 }
-                                <a target='_blank' rel='noreferrer' href='https://github.com/CaptainNate/eye-spy.git'>
-                                    <span className='bi bi-github work-icon'></span>
-                                </a>
                             </div>
                         </div>
                     </a>
