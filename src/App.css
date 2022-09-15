@@ -153,6 +153,20 @@ html, body {
   color: var(--black);
 }
 
+.project-title {
+  font-family: 'Rock Salt', cursive;
+}
+
+.sub-header {
+  font-family: 'Fira Code', monospace;
+
+}
+
+.project-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
 /* SKILLS */
 
 .resume-bg {
