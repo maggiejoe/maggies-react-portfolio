@@ -101,8 +101,8 @@ function Projects() {
                 {/* Project 1 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/Portfolio/' onMouseOver={handleMouseOverP1} onMouseOut={handleMouseOutP1}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project1} alt='Project 1'>
+                        <div className="card">
+                            <img className='rounded' src={project1} alt='Project 1'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start text-center'>
                                 {isHoveringP1 &&
@@ -132,8 +132,8 @@ function Projects() {
                 {/* Project 2 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/code-quiz/' onMouseOver={handleMouseOverP2} onMouseOut={handleMouseOutP2}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project2} alt='Project 2'>
+                        <div className="card">
+                            <img className='rounded' src={project2} alt='Project 2'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP2 &&
@@ -162,8 +162,8 @@ function Projects() {
                 {/* Project 3 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://p1group5.github.io/trip-it/' onMouseOver={handleMouseOverP3} onMouseOut={handleMouseOutP3}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project3} alt='Project 3'>
+                        <div className="card">
+                            <img className='rounded' src={project3} alt='Project 3'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP3 &&
@@ -192,8 +192,8 @@ function Projects() {
                 {/* Project 4 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/password-generator/' onMouseOver={handleMouseOverP4} onMouseOut={handleMouseOutP4}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project4} alt='Project 4'>
+                        <div className="card">
+                            <img className='rounded' src={project4} alt='Project 4'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP4 &&
@@ -222,8 +222,8 @@ function Projects() {
                 {/* Project 5 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://maggiejoe.github.io/work-day-scheduler/' onMouseOver={handleMouseOverP5} onMouseOut={handleMouseOutP5}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project5} alt='Project 5'>
+                        <div className="card">
+                            <img className='rounded' src={project5} alt='Project 5'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP5 &&
@@ -252,8 +252,8 @@ function Projects() {
                 {/* Project 6 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://lazy-plant-caretaker.herokuapp.com/' onMouseOver={handleMouseOverP6} onMouseOut={handleMouseOutP6}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project6} alt='Project 6'>
+                        <div className="card">
+                            <img className='rounded' src={project6} alt='Project 6'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP6 &&
@@ -282,8 +282,8 @@ function Projects() {
                 {/* Project 7 */}
                 <Col className='col-3 mb-4'>
                     <a target='_blank' rel='noreferrer' href='https://eye-spy-2022.herokuapp.com/' onMouseOver={handleMouseOverP7} onMouseOut={handleMouseOutP7}>
-                        <div className="card border-dark border-2 shadow-lg rounded-3">
-                            <img className='shadow-lg' src={project7} alt='Project 7'>
+                        <div className="card">
+                            <img className='rounded' src={project7} alt='Project 7'>
                             </img>
                             <div className='project-card card-img-overlay d-flex justify-content-start align-items-start'>
                                 {isHoveringP7 &&

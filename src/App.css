@@ -139,6 +139,7 @@ html, body {
 }
 
 /* WORK */
+
 .work-icon {
   font-size: 30px;
   color: var(--black);
@@ -152,7 +153,6 @@ html, body {
   background: rgba(255, 255, 255, 0.8);
   overflow-y: scroll;
   height: 100%;
-  
 }
 
 .hover-text {
@@ -171,6 +171,26 @@ html, body {
 .project-text {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
+}
+
+/* SCROLLBAR ANIMATION */
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+  opacity: 0.8;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--white);
+  opacity: 50%;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #3E5C3F, #A5CA96);
+  background-clip: padding-box;
 }
 
 /* SKILLS */
